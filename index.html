@@ -18,27 +18,29 @@
             </div>
 
             <div class="btn-wrap">
-                <button class="pl_one">Player 1 </button>
-                <button class="pl_two">Player 2</button>
-                <button class="reset">Reset</button>
+                <button class="pl_one" id="pl_one" onclick="selectPlayer(event)">Player 1 = X </button>
+                <button class="pl_two" id="pl_two" onclick="selectPlayer(event)">Player 2 = O</button>
+                <button class="reset" id="reset" onclick="reset()">Reset</button>
             </div>
 
-            <div class="game_table">
+            <div class="game_table" id="game_table">
 
-                <div class="game_cell" id="cell_1"></div>
-                <div class="game_cell" id="cell_2"></div>
-                <div class="game_cell" id="cell_3"></div>
-                <div class="game_cell" id="cell_4"></div>
-                <div class="game_cell" id="cell_5"></div>
-                <div class="game_cell" id="cell_6"> </div>
-                <div class="game_cell" id="cell_7"></div>
-                <div class="game_cell" id="cell_8"></div>
-                <div class="game_cell" id="cell_9"></div>
+                <div class="game_cell" id="cell_one" onclick="getsign(event)"></div>
+                <div class="game_cell" id="cell_two" onclick="getsign(event)"></div>
+                <div class="game_cell" id="cell_three" onclick="getsign(event)"></div>
+                <div class="game_cell" id="cell_four" onclick="getsign(event)"></div>
+                <div class="game_cell" id="cell_five" onclick="getsign(event)"></div>
+                <div class="game_cell" id="cell_six" onclick="getsign(event)"></div>
+                <div class="game_cell" id="cell_seven" onclick="getsign(event)"></div>
+                <div class="game_cell" id="cell_eight" onclick="getsign(event)"></div>
+                <div class="game_cell" id="cell_nine" onclick="getsign(event)"></div>
 
             </div>
         </div>
     </main>
 
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
