@@ -59,6 +59,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 170px 113px;
+  visibility: hidden;
 }
 
 .game_cell {
@@ -69,6 +70,8 @@ body {
   text-align: center;
   font-size: 75px;
   font-weight: normal;
+  /* color: black; */
+  /* color: red; */
 }
 
 #cell_one,
@@ -93,4 +96,11 @@ body {
 #cell_four,
 #cell_seven {
   border-left: none;
+}
+
+.win {
+  margin-top: 510px;
+  margin-left: 202px;
+  /* display: none; */
+  position: absolute;
 }
