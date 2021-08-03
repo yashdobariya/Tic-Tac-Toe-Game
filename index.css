@@ -34,24 +34,46 @@ body {
   border-radius: 20px;
   border: none;
   font-size: 15px;
+  background-color: white;
   margin-left: 10px;
+  cursor: pointer;
 }
+.pl_one:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
 .pl_two {
   padding: 10px 20px;
   border-radius: 20px;
+  background-color: white;
   border: none;
   font-size: 15px;
   margin-left: 10px;
+  cursor: pointer;
+}
+
+.pl_two:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 .reset {
   padding: 11px 26px;
   border-radius: 20px;
   font-size: 15px;
   border: none;
-  color: white;
+  color: red;
   margin-left: 10px;
-  background-color: red;
+  background-color: white;
   visibility: hidden;
+  cursor: pointer;
+}
+.reset:hover {
+  color: white;
+  /* margin-left: 10px; */
+  background-color: red;
 }
 
 .game_table {

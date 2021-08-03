@@ -10,7 +10,6 @@ let playerWin;
 let signCount = 0;
 
 const selectPlayer = (event) => {
-    
     if (event.target.id == pl_One_Data.id) {
         pl_Two_Data.style.visibility = "hidden";
         reset_Data.style.visibility = "visible";
@@ -39,9 +38,7 @@ const getsign = (event, ind1, ind2) => {
         playersign = "X";
     }   
     sign_Pointer.style.pointerEvents = "none";
-    
     CheckPlayerWin(event, ind1, ind2)
-
 }
 
 
@@ -111,17 +108,17 @@ const reset = () => {
     pl_Two_Data.style.visibility = "visible";
     reset_Data.style.visibility = "hidden";
     game_Table.style.visibility = "hidden";
-    console.log(game_Table.style.pointerEvents = "auto")
+    game_Table.style.pointerEvents = "unset";
     win_Data.innerHTML = "";
     signCount = 0;
     playersign = '';
     for (let i = 0; i < cell_Data.length; i++) { 
         cell_Data[i].innerHTML = "";
-        console.log(cell_Data[i],"f");
-        cell_Data[i].style.pointerEvents = "auto";
+        // console.log(cell_Data[i],"f");
+        cell_Data[i].style.pointerEvents = "unset";
     }
     cell_Data_Record = [[], [], []];
-    console.log(cell_Data_Record,"reset");
+    // console.log(cell_Data_Record,"reset");
 }
 
 // const exists = (arr, search) => {
