@@ -118,8 +118,9 @@ body {
 }
 
 .win {
-  margin-top: 510px;
-  margin-left: 150px;
-  font-size: 40px;
   position: absolute;
+  text-align: center;
+  bottom: 20px;
+  font-size: 40px;
+  width: 100%;
 }
